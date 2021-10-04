@@ -1,12 +1,14 @@
 @charset "utf-8";
 .all{
-    margin: 120px auto;
+    margin: 100px auto;
 }
 .all>h2{
     font: bolder 42px/52px sans-serif;
     text-align: center;
 }
-.box-greeting{}
+.box-greeting{
+    margin-bottom: 18px;
+}
 .box-greeting>form{
     display: flex;
     justify-content: center;
@@ -14,7 +16,7 @@
 .box-greeting>form>input{}
 .box-greeting>h3{
     text-align: center;
-    font: bolder 64px/80px serif;
+    font: bolder 54px/72px serif;
 }
 .box-todo{}
 .box-todo>form{
@@ -29,25 +31,26 @@
 }
 .box-todo>ul>li{
     text-align: center;
-    font: 18px/42px sans-serif;
+    font: 18px/32px sans-serif;
 }
 .box-todo>ul>li>span{
     margin-right: 10px;
 }
 #quotes{
-    margin: 60px 0 0;
+    margin: 35px 0 0;
     text-align: center;
 }
 #quotes span{
     display: block;
-    font: bolder 24px/40px serif;
+    font: 18px/24px serif;
 }
 #quotes span:last-child{
-    font: 18px/40px serif;
+    font: 14px/22px serif;
 }
 #weather{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
+    font: bold 16px/18px sans-serif;
 }
 .hidden{
     display: none;
