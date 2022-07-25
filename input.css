@@ -1,51 +1,94 @@
 @charset "utf-8";
+body{
+    position: relative;
+}
 .all{
-    margin: 100px auto;
+    width: 100%;
+    height: auto;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 .all>h2{
-    font: bolder 42px/52px sans-serif;
+    font-weight: bold;
+    font-size: 63px;
     text-align: center;
+    color: #fff;
 }
-.box-greeting{
-    margin-bottom: 18px;
+input, button{
+    border: none;
+    background-color: none;
+    outline: none;
+}
+
+.box-greeting, .box-todo{
+    width: 500px;
+    margin: 0 auto 18px;
 }
 .box-greeting>form{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
 }
-.box-greeting>form>input{}
-.box-greeting>h3{
+.box-greeting>form>input{
+    width: 400px;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 52px;
+    text-indent: 8px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#greeting{
+    font-size: 24px;
     text-align: center;
-    font: bolder 54px/72px serif;
+    color: #fff;
 }
-.box-todo{}
+
 .box-todo>form{
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #fff;
 }
 .box-todo>form>input{
-    margin: 0 auto;
+    width: 100%;
+    font: lighter 24px/52px Arial, Helvetica, sans-serif;
+    text-indent: 8px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
 }
 .box-todo>ul{
     list-style: none;
+    padding: 24px 0;
 }
 .box-todo>ul>li{
+    margin-bottom: 12px;
+    line-height: 24px;
     text-align: center;
-    font: 18px/32px sans-serif;
+    color: #fff;
 }
 .box-todo>ul>li>span{
     margin-right: 10px;
 }
-#quotes{
-    margin: 35px 0 0;
-    text-align: center;
+.box-todo>ul>li>button{
+    background-color: rgba(0, 0, 0, 0);
 }
-#quotes span{
+
+#quotes{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+#quotes span:first-child{
     display: block;
-    font: 18px/24px serif;
+    margin-bottom: 18px;
+    font: 18px/32px serif;
 }
 #quotes span:last-child{
-    font: 14px/22px serif;
+    font: 11px/21px serif;
 }
 #weather{
     margin-top: 20px;
